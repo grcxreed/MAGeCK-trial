@@ -1,4 +1,4 @@
-experiments/
+```experiments/
 |
 |-- raw_data/
 |   |-- sample1/
@@ -22,4 +22,4 @@ experiments/
 |-- quality_control/
     |-- qc_reports/
     |-- qc_plots/
-
+```
