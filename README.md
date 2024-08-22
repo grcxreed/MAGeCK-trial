@@ -24,8 +24,7 @@
 |   |-- qc_plots/
 |
 |-- references/
-|   |-- literature/
-|   |-- datasets/
+|   |-- GRCh38.p14.fasta
 |
 |-- config/
 |   |-- settings.yml
