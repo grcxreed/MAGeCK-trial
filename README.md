@@ -2,9 +2,7 @@
 ```
 | 
 |-- raw_data/
-|   |-- sample1/
-|   |-- sample2/
-|   |-- sample3/
+|   |-- sample1
 |
 |-- processed_data/
 |   |-- leukemia_dataset.csv
@@ -32,5 +30,5 @@
 |-- .gitignore
 ```
 
-## The work here uploads to your S3 bucket every time you push updates to GitHub due to linking with access keys.
+**The work here uploads to your S3 bucket every time you push updates to GitHub due to linking with access keys.**
 
