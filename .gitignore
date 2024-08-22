@@ -1,0 +1,31 @@
+# Ignore directories and files related to build and temporary files
+*.log
+*.tmp
+*.temp
+*.swp
+
+# Ignore Python bytecode files
+*.pyc
+__pycache__/
+
+# Ignore data files and directories that should not be versioned
+raw_data/
+processed_data/
+intermediate_files/
+
+# Ignore output directories
+output/
+results/
+
+# Ignore configuration files with sensitive information
+config/settings.yml
+
+# Ignore files related to environment management
+*.env
+.venv/
+env/
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+
