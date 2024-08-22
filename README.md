@@ -12,8 +12,9 @@
 |-- results/
 |
 |-- scripts/
-|   |--run_pipeline.sh
-|   
+|   |--prepare_fq.sh
+|   |--run_mageck.sh
+|
 |-- metadata/
 |   |-- sample_info.csv
 |   |-- experimental_conditions.csv
@@ -21,10 +22,6 @@
 |-- quality_control/
 |   |-- qc_reports/
 |   |-- qc_plots/
-|
-|-- results/
-|   |-- intermediate_results/
-|   |-- final_results/
 |
 |-- references/
 |   |-- literature/
