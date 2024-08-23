@@ -11,5 +11,5 @@ bwa mem $REFERENCE_GENOME $RAW_READS > ${OUTPUT_DIR}aligned_reads.sam
 
 # Step 2: Convert SAM to BAM and sort
 echo "Converting SAM to BAM and sorting"
-samtools view -bS ${OUTPUT_DIR}aligned_reads.sam | samtools sort -o ${OUTPUT_DIR}sorted_reads.bam
+samtools view -bS -F 4 ${OUTPUT_DIR}aligned_reads.sam | samtools sort -o ${OUTPUT_DIR}sorted_reads.bam
 
