@@ -1,65 +1,65 @@
-INFO  @ Thu, 22 Aug 2024 16:13:44: Parameters: /Users/gracereed/miniconda3/envs/mageck_env/bin/mageck plot -k processed_data/leukemia_dataset.csv -g results/leukemia.gene_summary.txt --output-prefix results/leukemia 
-INFO  @ Thu, 22 Aug 2024 16:13:44: Welcome to MAGeCK v0.5.9.2. Command: plot 
-INFO  @ Thu, 22 Aug 2024 16:13:44: Loading count table from processed_data/leukemia_dataset.csv  
-INFO  @ Thu, 22 Aug 2024 16:13:44: Processing 1 lines.. 
-DEBUG @ Thu, 22 Aug 2024 16:13:44: Parsing error in line 1 (usually the header line). Skip this line. 
-INFO  @ Thu, 22 Aug 2024 16:13:44: Loaded 73151 records. 
-INFO  @ Thu, 22 Aug 2024 16:13:44: Loading R template file: /Users/gracereed/miniconda3/envs/mageck_env/lib/python3.6/site-packages/mageck/plot_template.RTemplate. 
-INFO  @ Thu, 22 Aug 2024 16:13:44: Loading R template file: /Users/gracereed/miniconda3/envs/mageck_env/lib/python3.6/site-packages/mageck/plot_template_indvgene.RTemplate. 
-INFO  @ Thu, 22 Aug 2024 16:13:44: Loading Rnw template file: /Users/gracereed/miniconda3/envs/mageck_env/lib/python3.6/site-packages/mageck/plot_template.Rnw. 
-DEBUG @ Thu, 22 Aug 2024 16:13:44: Setting up the visualization module... 
-DEBUG @ Thu, 22 Aug 2024 16:13:44: Initial (total) size factor: 1.5765600179551327 1.9081844317628183 0.7314351327137928 0.6782079437050537 
-DEBUG @ Thu, 22 Aug 2024 16:13:45: Median factor: 1.4168444424340847 1.694643621525505 0.6479653176768615 0.5966574481207096 
-INFO  @ Thu, 22 Aug 2024 16:13:45: Final size factor: 1.4168444424340847 1.694643621525505 0.6479653176768615 0.5966574481207096 
-DEBUG @ Thu, 22 Aug 2024 16:13:45: Column index:3 
-DEBUG @ Thu, 22 Aug 2024 16:13:45: Column index:9 
-INFO  @ Thu, 22 Aug 2024 16:13:45: Running command: cd results; Rscript leukemia.R 
-INFO  @ Thu, 22 Aug 2024 16:13:48: Command message: 
-INFO  @ Thu, 22 Aug 2024 16:13:48:   During startup - Warning messages: 
-INFO  @ Thu, 22 Aug 2024 16:13:48:   1: Setting LC_CTYPE failed, using "C"  
-INFO  @ Thu, 22 Aug 2024 16:13:48:   2: Setting LC_COLLATE failed, using "C"  
-INFO  @ Thu, 22 Aug 2024 16:13:48:   3: Setting LC_TIME failed, using "C"  
-INFO  @ Thu, 22 Aug 2024 16:13:48:   4: Setting LC_MESSAGES failed, using "C"  
-INFO  @ Thu, 22 Aug 2024 16:13:48:   5: Setting LC_MONETARY failed, using "C"  
-INFO  @ Thu, 22 Aug 2024 16:13:48:   null device  
-INFO  @ Thu, 22 Aug 2024 16:13:48:             1  
-INFO  @ Thu, 22 Aug 2024 16:13:48:   Writing to file leukemia_summary.tex 
-INFO  @ Thu, 22 Aug 2024 16:13:48:   Processing code chunks with options ... 
-INFO  @ Thu, 22 Aug 2024 16:13:48:    1 : keep.source term verbatim (label = funcdef, leukemia_summary.Rnw:27) 
-INFO  @ Thu, 22 Aug 2024 16:13:48:    2 : keep.source term tex (label = tab1, leukemia_summary.Rnw:37) 
-INFO  @ Thu, 22 Aug 2024 16:13:48:    3 : keep.source term verbatim (leukemia_summary.Rnw:77) 
-INFO  @ Thu, 22 Aug 2024 16:13:48:    4 : keep.source term verbatim pdf  (leukemia_summary.Rnw:83) 
-INFO  @ Thu, 22 Aug 2024 16:13:48:    5 : keep.source term verbatim (leukemia_summary.Rnw:201) 
-INFO  @ Thu, 22 Aug 2024 16:13:48:    6 : keep.source term verbatim pdf  (leukemia_summary.Rnw:207) 
-INFO  @ Thu, 22 Aug 2024 16:13:48:    
-INFO  @ Thu, 22 Aug 2024 16:13:48:   You can now run (pdf)latex on 'leukemia_summary.tex' 
-INFO  @ Thu, 22 Aug 2024 16:13:48:   Error in texi2dvi("leukemia_summary.tex", pdf = TRUE) :  
-INFO  @ Thu, 22 Aug 2024 16:13:48:     Running 'texi2dvi' on 'leukemia_summary.tex' failed. 
-INFO  @ Thu, 22 Aug 2024 16:13:48:   Messages: 
-INFO  @ Thu, 22 Aug 2024 16:13:48:   You don't have a working TeX binary (tex) installed anywhere in 
-INFO  @ Thu, 22 Aug 2024 16:13:48:   your PATH, and texi2dvi cannot proceed without one.  If you want to use 
-INFO  @ Thu, 22 Aug 2024 16:13:48:   this script, you'll need to install TeX (if you don't have it) or change 
-INFO  @ Thu, 22 Aug 2024 16:13:48:   your PATH or TEX environment variable (if you do).  See the --help 
-INFO  @ Thu, 22 Aug 2024 16:13:48:   output for more details. 
-INFO  @ Thu, 22 Aug 2024 16:13:48:    
-INFO  @ Thu, 22 Aug 2024 16:13:48:   For information about obtaining TeX, please see http://tug.org/texlive, 
-INFO  @ Thu, 22 Aug 2024 16:13:48:   or do a web search for TeX and your operating system or distro. 
-INFO  @ Thu, 22 Aug 2024 16:13:48:   Execution halted 
-INFO  @ Thu, 22 Aug 2024 16:13:48:    
-INFO  @ Thu, 22 Aug 2024 16:13:48: End command message. 
-INFO  @ Thu, 22 Aug 2024 16:13:48: Running command: cd results; rm -rf leukemia_summary-*.pdf 
-INFO  @ Thu, 22 Aug 2024 16:13:48: Command message: 
-INFO  @ Thu, 22 Aug 2024 16:13:48:    
-INFO  @ Thu, 22 Aug 2024 16:13:48: End command message. 
-INFO  @ Thu, 22 Aug 2024 16:13:48: Running command: cd results; rm -rf leukemia_summary.aux 
-INFO  @ Thu, 22 Aug 2024 16:13:48: Command message: 
-INFO  @ Thu, 22 Aug 2024 16:13:48:    
-INFO  @ Thu, 22 Aug 2024 16:13:48: End command message. 
-INFO  @ Thu, 22 Aug 2024 16:13:48: Running command: cd results; rm -rf leukemia_summary.tex 
-INFO  @ Thu, 22 Aug 2024 16:13:48: Command message: 
-INFO  @ Thu, 22 Aug 2024 16:13:48:    
-INFO  @ Thu, 22 Aug 2024 16:13:48: End command message. 
-INFO  @ Thu, 22 Aug 2024 16:13:48: Running command: cd results; rm -rf leukemia_summary.toc 
-INFO  @ Thu, 22 Aug 2024 16:13:48: Command message: 
-INFO  @ Thu, 22 Aug 2024 16:13:48:    
-INFO  @ Thu, 22 Aug 2024 16:13:48: End command message. 
+INFO  @ Thu, 22 Aug 2024 18:26:18: Parameters: /Users/gracereed/miniconda3/envs/mageck_env/bin/mageck plot -k processed_data/leukemia_dataset.csv -g results/leukemia.gene_summary.txt --output-prefix results/leukemia 
+INFO  @ Thu, 22 Aug 2024 18:26:18: Welcome to MAGeCK v0.5.9.2. Command: plot 
+INFO  @ Thu, 22 Aug 2024 18:26:18: Loading count table from processed_data/leukemia_dataset.csv  
+INFO  @ Thu, 22 Aug 2024 18:26:18: Processing 1 lines.. 
+DEBUG @ Thu, 22 Aug 2024 18:26:18: Parsing error in line 1 (usually the header line). Skip this line. 
+INFO  @ Thu, 22 Aug 2024 18:26:18: Loaded 73151 records. 
+INFO  @ Thu, 22 Aug 2024 18:26:18: Loading R template file: /Users/gracereed/miniconda3/envs/mageck_env/lib/python3.6/site-packages/mageck/plot_template.RTemplate. 
+INFO  @ Thu, 22 Aug 2024 18:26:18: Loading R template file: /Users/gracereed/miniconda3/envs/mageck_env/lib/python3.6/site-packages/mageck/plot_template_indvgene.RTemplate. 
+INFO  @ Thu, 22 Aug 2024 18:26:18: Loading Rnw template file: /Users/gracereed/miniconda3/envs/mageck_env/lib/python3.6/site-packages/mageck/plot_template.Rnw. 
+DEBUG @ Thu, 22 Aug 2024 18:26:18: Setting up the visualization module... 
+DEBUG @ Thu, 22 Aug 2024 18:26:18: Initial (total) size factor: 1.5765600179551327 1.9081844317628183 0.7314351327137928 0.6782079437050537 
+DEBUG @ Thu, 22 Aug 2024 18:26:19: Median factor: 1.4168444424340847 1.694643621525505 0.6479653176768615 0.5966574481207096 
+INFO  @ Thu, 22 Aug 2024 18:26:19: Final size factor: 1.4168444424340847 1.694643621525505 0.6479653176768615 0.5966574481207096 
+DEBUG @ Thu, 22 Aug 2024 18:26:19: Column index:3 
+DEBUG @ Thu, 22 Aug 2024 18:26:19: Column index:9 
+INFO  @ Thu, 22 Aug 2024 18:26:19: Running command: cd results; Rscript leukemia.R 
+INFO  @ Thu, 22 Aug 2024 18:26:22: Command message: 
+INFO  @ Thu, 22 Aug 2024 18:26:22:   During startup - Warning messages: 
+INFO  @ Thu, 22 Aug 2024 18:26:22:   1: Setting LC_CTYPE failed, using "C"  
+INFO  @ Thu, 22 Aug 2024 18:26:22:   2: Setting LC_COLLATE failed, using "C"  
+INFO  @ Thu, 22 Aug 2024 18:26:22:   3: Setting LC_TIME failed, using "C"  
+INFO  @ Thu, 22 Aug 2024 18:26:22:   4: Setting LC_MESSAGES failed, using "C"  
+INFO  @ Thu, 22 Aug 2024 18:26:22:   5: Setting LC_MONETARY failed, using "C"  
+INFO  @ Thu, 22 Aug 2024 18:26:22:   null device  
+INFO  @ Thu, 22 Aug 2024 18:26:22:             1  
+INFO  @ Thu, 22 Aug 2024 18:26:22:   Writing to file leukemia_summary.tex 
+INFO  @ Thu, 22 Aug 2024 18:26:22:   Processing code chunks with options ... 
+INFO  @ Thu, 22 Aug 2024 18:26:22:    1 : keep.source term verbatim (label = funcdef, leukemia_summary.Rnw:27) 
+INFO  @ Thu, 22 Aug 2024 18:26:22:    2 : keep.source term tex (label = tab1, leukemia_summary.Rnw:37) 
+INFO  @ Thu, 22 Aug 2024 18:26:22:    3 : keep.source term verbatim (leukemia_summary.Rnw:77) 
+INFO  @ Thu, 22 Aug 2024 18:26:22:    4 : keep.source term verbatim pdf  (leukemia_summary.Rnw:83) 
+INFO  @ Thu, 22 Aug 2024 18:26:22:    5 : keep.source term verbatim (leukemia_summary.Rnw:201) 
+INFO  @ Thu, 22 Aug 2024 18:26:22:    6 : keep.source term verbatim pdf  (leukemia_summary.Rnw:207) 
+INFO  @ Thu, 22 Aug 2024 18:26:22:    
+INFO  @ Thu, 22 Aug 2024 18:26:22:   You can now run (pdf)latex on 'leukemia_summary.tex' 
+INFO  @ Thu, 22 Aug 2024 18:26:22:   Error in texi2dvi("leukemia_summary.tex", pdf = TRUE) :  
+INFO  @ Thu, 22 Aug 2024 18:26:22:     Running 'texi2dvi' on 'leukemia_summary.tex' failed. 
+INFO  @ Thu, 22 Aug 2024 18:26:22:   Messages: 
+INFO  @ Thu, 22 Aug 2024 18:26:22:   You don't have a working TeX binary (tex) installed anywhere in 
+INFO  @ Thu, 22 Aug 2024 18:26:22:   your PATH, and texi2dvi cannot proceed without one.  If you want to use 
+INFO  @ Thu, 22 Aug 2024 18:26:22:   this script, you'll need to install TeX (if you don't have it) or change 
+INFO  @ Thu, 22 Aug 2024 18:26:22:   your PATH or TEX environment variable (if you do).  See the --help 
+INFO  @ Thu, 22 Aug 2024 18:26:22:   output for more details. 
+INFO  @ Thu, 22 Aug 2024 18:26:22:    
+INFO  @ Thu, 22 Aug 2024 18:26:22:   For information about obtaining TeX, please see http://tug.org/texlive, 
+INFO  @ Thu, 22 Aug 2024 18:26:22:   or do a web search for TeX and your operating system or distro. 
+INFO  @ Thu, 22 Aug 2024 18:26:22:   Execution halted 
+INFO  @ Thu, 22 Aug 2024 18:26:22:    
+INFO  @ Thu, 22 Aug 2024 18:26:22: End command message. 
+INFO  @ Thu, 22 Aug 2024 18:26:22: Running command: cd results; rm -rf leukemia_summary-*.pdf 
+INFO  @ Thu, 22 Aug 2024 18:26:22: Command message: 
+INFO  @ Thu, 22 Aug 2024 18:26:22:    
+INFO  @ Thu, 22 Aug 2024 18:26:22: End command message. 
+INFO  @ Thu, 22 Aug 2024 18:26:22: Running command: cd results; rm -rf leukemia_summary.aux 
+INFO  @ Thu, 22 Aug 2024 18:26:22: Command message: 
+INFO  @ Thu, 22 Aug 2024 18:26:22:    
+INFO  @ Thu, 22 Aug 2024 18:26:22: End command message. 
+INFO  @ Thu, 22 Aug 2024 18:26:22: Running command: cd results; rm -rf leukemia_summary.tex 
+INFO  @ Thu, 22 Aug 2024 18:26:22: Command message: 
+INFO  @ Thu, 22 Aug 2024 18:26:22:    
+INFO  @ Thu, 22 Aug 2024 18:26:22: End command message. 
+INFO  @ Thu, 22 Aug 2024 18:26:22: Running command: cd results; rm -rf leukemia_summary.toc 
+INFO  @ Thu, 22 Aug 2024 18:26:22: Command message: 
+INFO  @ Thu, 22 Aug 2024 18:26:22:    
+INFO  @ Thu, 22 Aug 2024 18:26:22: End command message. 
