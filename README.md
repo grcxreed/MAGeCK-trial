@@ -29,6 +29,3 @@
 |
 |-- .gitignore
 ```
-
-**The work here uploads to your S3 bucket every time you push updates to GitHub due to linking with access keys.**
-
