@@ -28,6 +28,7 @@
 |   |-- settings.yml
 |
 |-- .gitignore
+|
 |-- nextflow/               
 |   |-- main.nf             
 |   |-- nextflow.config      
