@@ -28,4 +28,9 @@
 |   |-- settings.yml
 |
 |-- .gitignore
+|-- nextflow/               
+|   |-- main.nf             
+|   |-- nextflow.config      
+|   |-- env_configs/         
+|   |-- Dockerfile
 ```
