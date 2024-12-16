@@ -1,8 +1,8 @@
 #!/usr/bin/env nextflow
 
 // Define the directories for raw data, processed data, results, etc.
-params.raw_data = 'raw_data/sample1'
-params.processed_data = 'processed_data/leukemia_dataset.csv'
+params.raw_data = 'raw_data/sample1'    // Directory containing FASTQ files
+params.processed_data = 'processed_data/leukemia_dataset.csv'  // Processed data (CSV)
 params.results_dir = 'results'
 params.scripts_dir = 'scripts'
 params.qc_dir = 'quality_control/qc_reports'
@@ -18,7 +18,7 @@ process prepare_data {
     path raw_data_dir from params.raw_data
 
     output:
-    path "processed_data/*"
+    path "processed_data/leukemia_dataset.csv"  // Specify output file rather than the directory
 
     script:
     """
@@ -33,7 +33,7 @@ process run_mageck {
     path reference_genome from grch38_ref
 
     output:
-    path "${params.results_dir}/mageck_results/*"
+    path "${params.results_dir}/mageck_results/*"  // Ensure this matches your script's output files
 
     script:
     """
@@ -51,7 +51,6 @@ process qc_reports {
     # Generate QC reports
     mkdir -p ${params.qc_dir}
     # Example: Run a QC tool or generate QC plots
-    # This can be customized for your specific QC pipeline
     echo "QC Report" > ${params.qc_dir}/qc_report.txt
     """
 }
